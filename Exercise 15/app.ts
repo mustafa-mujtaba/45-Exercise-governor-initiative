@@ -5,12 +5,15 @@
 // Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.Print a second set of invitation messages, one for each person who is still in your list.
 
 
+let guestsList = ["Farman","Sameer","Umair"];
+
+
 let unableToAttend = "Farman";
 console.log(`${unableToAttend} can't make it to dinner.`);
 
 // Replace the guest
 let newGuest = "Muneeb";
-guest[guest.indexOf(unableToAttend)] = newGuest;
+guestsList[guestsList.indexOf(unableToAttend)] = newGuest;
 
 // New invitations
-guest.forEach(guest => {console.log(`Dear ${guest}, would you like to join me for dinner?`);});
+guestsList.forEach(guest => {console.log(`Dear ${guest}, would you like to join me for dinner?`);});
